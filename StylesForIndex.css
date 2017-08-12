@@ -1,0 +1,86 @@
+html {
+    justify-content: center;
+    display: flex;
+}
+
+table {
+    width: 520px;
+    border-collapse: separate;
+    margin-top: 15%;
+    background-color: cornsilk;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 20px 10px;
+    padding-bottom: 5px;
+}
+
+table tr td {
+    width: 50%;
+    padding: 1%;
+    height: 35px;
+    font-size: 15px;
+}
+
+table tr .alCenter {
+    text-align: center;
+}
+
+table tr td button {
+    margin-top: 10px;
+    border: 2px solid #a1f7df;
+    border-radius: 4px;
+    padding: 4px;
+    background-color: white;
+    transition: background 0.4s;
+}
+
+table tr td button:hover {
+    background-color: #a1f7df;
+}
+
+table tr td button:disabled {
+    background-color: #dde9e5;
+    border: 2px solid #dde9e5;
+}
+
+#resultContainer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    width: 520px;
+}
+
+input {
+    padding-left: 10px;
+    padding-top: 2px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.ok {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.ok:focus {
+    border: 1px solid dodgerblue;
+}
+
+.error {width: 100%;
+    box-sizing: border-box;
+    border: 2px solid red;
+}
+
+.progress {
+    box-sizing: border-box;
+    border: 2px solid moccasin;
+}
+
+.success {
+    box-sizing: border-box;
+    border: 2px solid lawngreen;
+}
+
+

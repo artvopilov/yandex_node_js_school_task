@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="StylesForIndex.css" rel="stylesheet">
+    <title>YandexSchool</title>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery.maskedinput.js"></script>
+    <script src="phone_format.js"></script>
+</head>
+<body>
+    <form id="myForm" action="JsonFiles/progress.json" method="post" onsubmit="return false;">
+        <table>
+            <tr>
+                <td class="alCenter">
+                    <label for="fio">ФИО</label>
+                </td>
+                <td class="widthFull">
+                    <input id="fio" class="ok" name="fio" type="text" placeholder="Смирнов Петр Васильевич">
+                </td>
+            </tr>
+            <tr>
+                <td class="alCenter">
+                    <label for="email">Email</label>
+                </td>
+                <td class="widthFull">
+                    <input id="email" class="ok" name="email" placeholder="petya@yandex.ru">
+                </td>
+            </tr>
+            <tr>
+                <td class="alCenter">
+                    <label for="phone">Телефон</label>
+                </td>
+                <td class="widthFull">
+                    <input id="phone" class="ok" name="phone" type="tel" placeholder="+7(999)999-99-99">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="alCenter">
+                    <button id="submitButton" type="submit">
+                        Подтвердить
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <div id="resultContainer"></div>
+    <script src="index.js"></script>
+</body>
+</html>
